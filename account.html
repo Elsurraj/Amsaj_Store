@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amsaj-Store/Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="images/logo_2.png" class="logo-1" />
+      </div>
+      <div class="navbar">
+        <ul id="menuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">products</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="account.html" class="active">Account</a></li>
+          <li>
+            <a href="cart.html"><img src="images/cart2.png" class="logo-2" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="login-btn">
+        <a href="account.html" class="btn">Login &#8594;</a>
+      </div>
+      <img src="images/menu-bar.png" class="menu-bar" onclick="menutoggle();" />
+    </nav>
+  </div>
+
+  <!-- -----------------Account Section---------------- -->
+  <div class="account-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 account">
+          <img src="images/images (34).jpeg" class="bg-image" style="width: 80%; padding: 50px 0;" />
+        </div>
+        <div class="col-2">
+          <div class="form-container">
+            <div class="form-btn">
+              <span onclick="login()">Login</span>
+              <span onclick="register()">Register</span>
+              <hr id="Indicator" />
+            </div>
+
+            <!-- Login Form (does not submit) -->
+            <form id="LoginForm">
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Password" required />
+              <button type="submit" class="btn">Login</button>
+              <a href="ResetEmail.html" style="color: #777">Forgot password?</a>
+            </form>
+
+            <!-- Register Form (submits to email using FormSubmit) -->
+            <form id="RegForm" action="https://formsubmit.co/elsurraj@gmail.com" method="POST">
+              <input type="email" name="email" placeholder="E-mail" required />
+              <input type="password" name="password" placeholder="Password" required />
+              <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+
+              <!-- Optional hidden fields -->
+              <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <button type="submit" class="btn">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------Footer---------------- -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download our App for Android and iOS mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/playstore.jpg" />
+            <img src="images/iostore.jpg" />
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo_2.png" class="logo-1" />
+          <p>
+            Our purpose is to sustainably make the pleasure and
+            benefits of Quality Products accessible to the many.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+                            <h3>Follow Us</h3>
+                        <ul>
+                            <li>
+                            <a  href='https://www.facebook.com/surraj.ahmeed.abubakharHardo'  >
+                            Facebook
+                          </a></li>
+                           <li>
+                            <a  href='https://wa.me/2348060810846'>
+                                Whatsapp
+                            </a></li>
+                            <li>
+                                <a href='https://elsurraj.github.io'>
+                                    Github
+                                </a></li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>                           
+                        </ul>
+                        </div>
+      </div>
+      <hr />
+      <p class="copy-Right">Copyright © <span id="currentYear"></span> Amsaj_Tech. All Rights Reserved. (Surraj)</p>
+    </div>
+  </div>
+
+  <!-- -----------------JS Scripts---------------- -->
+  <script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register() {
+      RegForm.style.transform = "translateX(0px)";
+      LoginForm.style.transform = "translateX(0px)";
+      Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login() {
+      RegForm.style.transform = "translateX(300px)";
+      LoginForm.style.transform = "translateX(300px)";
+      Indicator.style.transform = "translateX(0px)";
+    }
+
+    const year = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = year;
+
+    function menutoggle() {
+      var menuItems = document.getElementById("menuItems");
+      if (menuItems.style.maxHeight === "0px" || !menuItems.style.maxHeight) {
+        menuItems.style.maxHeight = "200px";
+      } else {
+        menuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+</html>

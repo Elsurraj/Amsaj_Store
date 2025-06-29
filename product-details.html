@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amsaj-Store/product</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="images/logo_2.png" class="logo-1" />
+      </div>
+      <div class="navbar">
+        <ul id="menuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html" class="active">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="cart.html">
+              <img src="images/cart2.png" class="logo-2" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="login-btn">
+        <a href="account.html" class="btn">Login &#8594;</a>
+      </div>
+      <img src="images/menu-bar.png" class="menu-bar" onclick="menutoggle();" />
+    </nav>
+  </div>
+
+  <!-- ------- latest single product details ------- -->
+  <div class="small-container single-product">
+    <div class="row">
+      <div class="col-2 col-2-img">
+        <img src="images/t5.jpeg" width="90%" height="350px" id="ProductImg" />
+
+        <div class="small-img-row">
+          <div class="small-img-col">
+            <img src="images/t5.jpeg" width="100%" height="80%" class="small-img" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/t6.jpeg" width="100%" height="80%" class="small-img" />
+          </div>
+          <div class="small-img-col">
+            <img src="images/images (40).jpeg" width="100%" height="80%" class="small-img" />
+          </div>
+          <div class="small-img-col height">
+            <img src="images/cj-cart.jpg" width="100%" height="80%" class="small-img" />
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <p>Home / T-shirt</p>
+        <h1>Ash printed T-shirt</h1>
+        <h4>$50.00</h4>
+
+        <select>
+          <option value="">Select Size</option>
+          <option value="">XXL</option>
+          <option value="">XL</option>
+          <option value="">Medium</option>
+          <option value="">Small</option>
+        </select>
+        <input type="number" value="1" />
+        <a href="cart.html" class="btn">Add To Cart</a>
+        <h3>Product Details <i class="fa fa-indent"></i></h3>
+        <br />
+        <p>
+          Give your summer wardrobe a style upgrade with HRX Men's Active T-shirt.
+          Team it with a pair of shorts for your morning workout or with denim for
+          an evening out with the guys.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------title---------------- -->
+  <div class="small-container">
+    <div class="row row-2">
+      <h2>Related Products</h2>
+      <p style="cursor: pointer">
+        <a href="product.html">View More</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="small-container bg">
+    <div class="row">
+      <div class="col-4">
+        <img src="images/images (39).jpeg" />
+        <h4>-----</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/t8.jpeg" />
+        <h4>-----</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/self.JPG" />
+        <h4>-----</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="images/t9.jpeg" />
+        <h4>-----</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------------footer---------------- -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download our app for Android and iOS mobile phones.</p>
+          <div class="app-logo">
+            <img src="images/playstore.jpg" />
+            <img src="images/iostore.jpg" />
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo_2.png" class="logo-1" />
+          <p>
+            Our purpose is to sustainably make the pleasure and benefits of
+            quality products accessible to the many.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+          <div class="footer-col-3">
+                            <h3>Follow Us</h3>
+                        <ul>
+                            <li>
+                            <a  href='https://www.facebook.com/surraj.ahmeed.abubakharHardo'  >
+                            Facebook
+                          </a></li>
+                           <li>
+                            <a  href='https://wa.me/2348060810846'>
+                                Whatsapp
+                            </a></li>
+                            <li>
+                                <a href='https://elsurraj.github.io'>
+                                    Github
+                                </a></li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>                           
+                        </ul>
+                        </div>
+      </div>
+      <hr />
+      <p class="copy-Right">
+        Copyright © <span id="currentYear"></span> Amsaj_Tech. All Rights
+        Reserved. (Surraj)
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // JS for small product image switching
+    const ProductImg = document.getElementById("ProductImg");
+    const SmallImg = document.getElementsByClassName("small-img");
+
+    for (let i = 0; i < SmallImg.length; i++) {
+      SmallImg[i].onclick = function () {
+        ProductImg.src = SmallImg[i].src;
+      };
+    }
+
+    // Set current year in footer
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsaj-Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo_2.png" class="logo-1">
+            </div>
+            <div class="navbar">
+                <ul id="menuItems">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="product.html">products</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="account.html"></a></li>
+                    <li><a href="cart.html">
+                        <img src="images/cart2.png" class="logo-2">
+                    </a></li>
+                </ul>
+            </div>
+
+        <div class="login-btn">
+            <a href="account.html" class="btn"> Login &#8594;</a>
+        </div>
+          <img src="images/menu-bar.png" class="menu-bar"
+            onclick="menutoggle();" >
+        </nav>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give your Wardrove <br> a new style! </h1>
+                    <p>Success isn't always about greatness. it's about
+                        consistency.<br> hard work gain success. Greatness
+                        will come.
+                    </p>
+                    <a href="product.html" class="btn"> Explore Now  &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/images (34).jpeg" class="bg-image">
+                </div>
+            </div>
+    </div>
+    </div>
+
+  <!------- featured categories 2nd container------->
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/w3.jpeg" >
+                    </div>
+                    <div class="col-3">
+                        <img src="images/s14.jpg" >
+                    </div>
+                    <div class="col-3">
+                        <img src="images/t9.jpeg" >
+                    </div>
+                </div>
+            </div>
+            </div>
+
+                 <!------- featured product 3rd container------->
+                 <div class="small-container bg">
+                     <h2 class="title-1"> Featured Products</h2>
+                     <div class="row">
+                         <div class="col-4">
+                             <img src="images/images (46).jpeg">
+                             <h4>------</h4>
+                             <div class="rating">
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa-light fa-star-sharp-half-stroke colo"></i>
+                             </div>
+                             <p>$50.00</p>
+                         </div>
+                         <div class="col-4">
+                            <img src="images/camera.jpg">
+                            <h4>Camera</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-haif"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/images (83).jpeg">
+                            <h4>-----</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/w8.jpeg">
+                            <h4>-----</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                     </div>
+        <!------- latest product 4th container------->
+          <div class="small-container bg">
+                     <h2 class="title-1"  id="product"> Latest Products</h2>
+                     <div class="row">
+                         <div class="col-4">
+                             <img src="images/images (40).jpeg">
+                             <h4>------</h4>
+                             <div class="rating">
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                 <i class="fa fa-star-o"></i>
+                             </div>
+                             <p>$50.00</p>
+                         </div>
+                         <div class="col-4">
+                            <img src="images/images (43).jpeg">
+                            <h4>-----</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/images (54).jpeg">
+                            <h4>-----</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/images (72).jpeg">
+                            <h4>-----</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/images (82).jpeg">
+                            <h4>-----</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/images (63).jpeg">
+                            <h4>-----</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/images (94).jpeg">
+                            <h4>-----</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                        <div class="col-4">
+                                <img src="images/images (90).jpeg">
+                                <h4>-----</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <p>$50.00</p>
+                            </div>
+                     </div>
+                 </div>
+                </div>
+  <!-----offer---------------->
+<div class="offer ">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2 watch">
+                <img src="images/w10.jpeg" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusive available on Amsaj-Store</p>
+                <h1>smart band 4</h1>
+                <small>
+                    The Mi Smart band 4 features a 39.9% larger
+                    (than Mi band 3) AMOLED Full touch display with
+                    adjustable brightness, so everything is clear as
+                    can be. <br>
+                </small>
+                <a href="#" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------testimonial---------------->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <d iv class="col-3 t-text">
+                <i class="fa fa-quote-left"></i>
+                <p>
+                   What sets Amsaj Store apart is their honesty and reliability.
+                    I've bought items multiple times, and they've never
+                    disappointed me. I recommend them to friends and family
+                     because I trust them completely."
+                </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                <img src="images/cj.jpeg" class="self">
+                <h3>Mallan Cj</h3>
+            </d>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>
+                   "I was honestly surprised at how fast and smooth the whole process was. 
+                   From ordering to delivery, everything was seamless. The product I got was 
+                   genuine and neatly packaged. Amsaj Store is the real deal!"
+                </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                <img src="images/lami.jpg" class="self">
+                <h3>Ameerah A.</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>
+                    "I love shopping from Amsaj Store! The clothes are exactly as shown, 
+                    and the quality always exceeds my expectations. My orders arrive on time,
+                     and their customer service is top-notch. It's now my favorite place to
+                      shop online!"
+                </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                <img src="images/umar.jpeg" class="self">
+                <h3>Umar Lawan</h3>
+            </div>            
+        </div>
+    </div>
+</div>
+<!-- -----------------footer---------------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download our App for Andoid and ios mobile phone.</p>
+                <div class="app-logo">
+                   <img src="images/playstore.jpg">
+                   <img src="images/iostore.jpg">
+                </div>
+            </div>
+                <div class="footer-col-2">
+                      <img src="images/logo_2.png" class="logo-1">
+                    <p>
+                        our purpose is to sustainably make the pleasure and
+                        benefits of Quality Products accessible to the many.
+                    </p>
+                </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                       <ul>
+                           <li>Coupons</li>
+                           <li>Blog Post</li>
+                           <li>Return Policy</li>
+                           <li>Join Affiliate</li>
+                       </ul>
+                    </div>
+                        <div class="footer-col-3">
+                            <h3>Follow Us</h3>
+                        <ul>
+                            <li>
+                            <a  href='https://www.facebook.com/surraj.ahmeed.abubakharHardo'  >
+                            Facebook
+                          </a></li>
+                           <li>
+                            <a  href='https://wa.me/2348060810846'>
+                                Whatsapp
+                            </a></li>
+                            <li>
+                                <a href='https://elsurraj.github.io'>
+                                    Github
+                                </a></li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>                           
+                        </ul>
+                        </div>
+        </div>
+        <hr>
+         <p class="copy-Right">Copyright © <span id="currentYear"></span> Amsaj_Tech. All Right Reserved. (Surraj) </p>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
