@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amsaj-Store/Login</title>
+  <link rel="icon" href="images/logo_2.png">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -20,9 +21,7 @@
           <li><a href="contact.html">contact</a></li>
           <li><a href="about.html">about</a></li>
           <li><a href="account.html" class="active">Account</a></li>
-          <li>
-            <a href="cart.html"><img src="images/cart2.png" class="logo-2" /></a>
-          </li>
+          <li><a href="cart.html"><img src="images/cart2.png" class="logo-2" /></a></li>
         </ul>
       </div>
       <div class="login-btn">
@@ -47,7 +46,7 @@
               <hr id="Indicator" />
             </div>
 
-            <!-- Login Form (does not submit) -->
+            <!-- Login Form -->
             <form id="LoginForm">
               <input type="email" placeholder="Email" required />
               <input type="password" placeholder="Password" required />
@@ -55,16 +54,13 @@
               <a href="ResetEmail.html" style="color: #777">Forgot password?</a>
             </form>
 
-            <!-- Register Form (submits to email using FormSubmit) -->
+            <!-- Register Form -->
             <form id="RegForm" action="https://formsubmit.co/elsurraj@gmail.com" method="POST">
               <input type="email" name="email" placeholder="E-mail" required />
               <input type="password" name="password" placeholder="Password" required />
               <input type="password" name="confirm_password" placeholder="Confirm Password" required />
-
-              <!-- Optional hidden fields -->
               <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" />
               <input type="hidden" name="_captcha" value="false" />
-
               <button type="submit" class="btn">Register</button>
             </form>
           </div>
@@ -79,7 +75,7 @@
       <div class="row">
         <div class="footer-col-1">
           <h3>Download Our App</h3>
-          <p>Download our App for Android and iOS mobile phone.</p>
+          <p>Download our App for Android and iOS mobile phones.</p>
           <div class="app-logo">
             <img src="images/playstore.jpg" />
             <img src="images/iostore.jpg" />
@@ -102,25 +98,14 @@
           </ul>
         </div>
         <div class="footer-col-3">
-                            <h3>Follow Us</h3>
-                        <ul>
-                            <li>
-                            <a  href='https://www.facebook.com/surraj.ahmeed.abubakharHardo'  >
-                            Facebook
-                          </a></li>
-                           <li>
-                            <a  href='https://wa.me/2348060810846'>
-                                Whatsapp
-                            </a></li>
-                            <li>
-                                <a href='https://elsurraj.github.io'>
-                                    Github
-                                </a></li>
-                            <li>
-                                <a href="#">Instagram</a>
-                            </li>                           
-                        </ul>
-                        </div>
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href='https://www.facebook.com/surraj.ahmeed.abubakharHardo'>Facebook</a></li>
+            <li><a href='https://wa.me/2348060810846'>Whatsapp</a></li>
+            <li><a href='https://github.com/Elsurraj/'>Github</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
       </div>
       <hr />
       <p class="copy-Right">Copyright © <span id="currentYear"></span> Amsaj_Tech. All Rights Reserved. (Surraj)</p>
@@ -129,6 +114,7 @@
 
   <!-- -----------------JS Scripts---------------- -->
   <script>
+    // Register/Login toggle
     var LoginForm = document.getElementById("LoginForm");
     var RegForm = document.getElementById("RegForm");
     var Indicator = document.getElementById("Indicator");
@@ -145,17 +131,16 @@
       Indicator.style.transform = "translateX(0px)";
     }
 
-    const year = new Date().getFullYear();
-    document.getElementById("currentYear").textContent = year;
-
+    // Toggle menu
     function menutoggle() {
       var menuItems = document.getElementById("menuItems");
-      if (menuItems.style.maxHeight === "0px" || !menuItems.style.maxHeight) {
-        menuItems.style.maxHeight = "200px";
-      } else {
-        menuItems.style.maxHeight = "0px";
-      }
+      menuItems.classList.toggle("active");
     }
+
+    // Current year auto update
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

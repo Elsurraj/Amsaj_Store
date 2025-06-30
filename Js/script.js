@@ -12,14 +12,14 @@
 //     var menuItems=document.getElementById("menuItems");
 //  menuItems.style.maxHeight='0px';
 
-function menutoggle(){
-    if(menuItems.style.maxHeight=='0px'){
-     menuItems.style.maxHeight='200px';
-    }
-    else{
-        menuItems.style.maxHeight='0px';
-    }
-}
+// function menutoggle(){
+//     if(menuItems.style.maxHeight=='0px'){
+//      menuItems.style.maxHeight='200px';
+//     }
+//     else{
+//         menuItems.style.maxHeight='0px';
+//     }
+// }
 
 
 const year = new Date().getFullYear();
@@ -40,6 +40,11 @@ var Indicator = document.getElementById('Indicator');
         LoginForm.style.transform = 'translateX(300px)';
         Indicator.style.transform = 'translateX(0px)';
     }
+
+    function menutoggle() {
+    var menu = document.getElementById("menuItems");
+    menu.classList.toggle("active");
+}
 
 
 
